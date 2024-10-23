@@ -15,26 +15,26 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="/get-started">Get Started</NavLink> 
+              <NavLink className="nav-link active" aria-current="page" to="/Explore">Explore</NavLink> 
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/features">Features</NavLink> 
+              <NavLink className="nav-link" to="/Aboutus">About us</NavLink> 
             </li>
             <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Resources
+              <NavLink className="nav-link dropdown-toggle" to="CustomerSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Customer support
               </NavLink>
               <ul className="dropdown-menu">
-                <li><NavLink className="dropdown-item" to="#">Action</NavLink></li>
-                <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
-                <li><NavLink className="dropdown-divider" /></li>
-                <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
+                <li><NavLink className="dropdown-item" to="FAQ">FAQ</NavLink></li>
+                <li><NavLink className="dropdown-item" to="ReturnPolicy">Return policy </NavLink></li>
+                <li><NavLink className="dropdown-item" to="ShippingDetails">Shiping details </NavLink></li>
+                <li><NavLink className="dropdown-item" to="ContactInfo">Conact info</NavLink></li>
               </ul>
             </li>
           </ul>
 
-          <button className='btn'>LOG IN</button>
-          <button className="btn btn-outline-success" type="submit">Create blog</button>
+          <button className='btn'>Log In</button>
+          <button className='btn btn-outline-success' type="submit">My Cart</button>
         </div>
       </div>
     </nav>

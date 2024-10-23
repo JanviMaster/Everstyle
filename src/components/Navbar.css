@@ -1,18 +1,21 @@
 /* Navbar.css  rgb(10, 93, 93) ; */
 
 .navbar {
-    background-color: teal; 
+    background-color: rgb(58, 36, 99); 
     padding: 1rem;
+    background-color: rgb(48, 35, 70); 
   }
   
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: white;
+
   }
   
   .navbar-toggler {
     border: none;
+    background-color:rgb(58, 36, 99) ;
   }
   
   .navbar-toggler-icon {
@@ -20,7 +23,7 @@
   }
   
   .navbar-nav .nav-item .nav-link {
-    color: #333;
+    color: white;
     font-weight: 500;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
@@ -35,21 +38,26 @@
   }
   
   .dropdown-menu {
-    background-color:teal;
+    background-color:rgb(58, 36, 99);
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   
   .dropdown-menu .dropdown-item {
-    color: #333;
+    color: white;
+    background-color: rgb(58, 36, 99);
   }
   
-  .dropdown-menu .dropdown-item:hover {
-    background-color: #f8f9fa;
+  .dropdown-menu  {
+    background-color: rgb(58, 36, 99);
   }
-  
+
+  .dropdown-item:hover{
+    background-color:  rgb(48, 35, 70);
+  }
+
   .btn {
-    background-color: rgb(10, 93, 93) ;;
+    background-color:  rgb(48, 35, 70) ;
     color: white;
     font-weight: 600;
     border: none;
@@ -60,17 +68,18 @@
   .btn-outline-success {
     color:white;
     border: 2px solid white;
-    background-color: transparent;
+    background-color: rgb(58, 36, 99);
   }
   
   .btn-outline-success:hover {
-    background-color: rgb(10, 93, 93) ;;
+    background-color:  rgb(48, 35, 70) ;
     color: white;
+    outline-color: whitesmoke;
   }
   
   
   .offcanvas {
-    background-color: teal;
+    background-color: rgb(58, 36, 99);
   }
   
   .offcanvas-header {
@@ -82,13 +91,20 @@
   }
   
   .offcanvas-body .nav-link {
-    color: #333;
+    color:white;
     font-weight: 500;
   }
   
   .offcanvas-body .nav-link:hover {
-    color: teal;
+    color:  rgb(48, 35, 70);
   }
-  
-  
+  /* .btn-btn-success:hover{
+    outline-color: whitesmoke;
+    background-color: rgb(58, 36, 99);
+    color:white;
+  } */
+  .btn:hover{
+    background-color: rgb(58, 36, 99);
+    color:white;
+  }
   
