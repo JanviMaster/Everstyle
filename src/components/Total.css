@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; 
+  }
+  
+  .footer .btn {
+    height: 100%;
+    width: 20%;
+  }
+  
+  .footer .total-amount {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+  

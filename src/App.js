@@ -1,54 +1,43 @@
 import React, { useState } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css";
-import AddItem from "./components/AddItem";
 import Navbar from './components/Navbar';
-import { BrowserRouter } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import Footer from './components/Footer';
-import "./App.css";
 import Aboutus from "./pages/Aboutus";
+import Cart from "./pages/Cart";
+import ContactInfo from "./pages/ContactInfo";
+import ShippingDetails from "./pages/ShippingDetails";
+import AddItem from "./components/AddItem";
+import Total from "./components/Total";
 
 function App() {
   const products = [
-    {
-      price: 99999,
-      name: "IPhone 10S Max",
-      quantity: 0,
-    },
-    {
-      price: 9999,
-      name: "Redmi Note 10S Max",
-      quantity: 0,
-    },
+    { price: 99999, name: "IPhone 10S Max", quantity: 0 },
+    { price: 9999, name: "Redmi Note 10S Max", quantity: 0 },
   ];
 
-  let [productList, setProductList] = useState(products);
-  let [totalAmount, setTotalAmount] = useState(0);
+  const [productList, setProductList] = useState(products);
+  const [totalAmount, setTotalAmount] = useState(0);
 
   const incrementQuantity = (index) => {
     let newProductList = [...productList];
-    let newTotalAmount = totalAmount;
     newProductList[index].quantity++;
-    newTotalAmount += newProductList[index].price;
-    setTotalAmount(newTotalAmount);
+    setTotalAmount(totalAmount + newProductList[index].price);
     setProductList(newProductList);
   };
 
   const decrementQuantity = (index) => {
     let newProductList = [...productList];
-    let newTotalAmount = totalAmount;
     if (newProductList[index].quantity > 0) {
       newProductList[index].quantity--;
-      newTotalAmount -= newProductList[index].price;
+      setTotalAmount(totalAmount - newProductList[index].price);
     }
-    setTotalAmount(newTotalAmount);
     setProductList(newProductList);
   };
 
   const resetQuantity = () => {
-    let newProductList = productList.map((product) => {
-      return { ...product, quantity: 0 }; // Return the updated product
-    });
+    const newProductList = productList.map(product => ({ ...product, quantity: 0 }));
     setProductList(newProductList);
     setTotalAmount(0);
   };
@@ -63,38 +52,43 @@ function App() {
   };
 
   const addItem = (name, price) => {
-    let newProductList = [...productList];
-    newProductList.push({
-      price: price,
-      name: name,
-      quantity: 0,
-    });
-    setProductList(newProductList);
+    setProductList([...productList, { price, name, quantity: 0 }]);
   };
 
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        {/* <nav>
-          <NavLink to="/Explore">Explore</NavLink>
-          <NavLink to="/Aboutus">About Us</NavLink>
-          <NavLink to="/create">Create</NavLink>
-        </nav> */}
-      </BrowserRouter>
-
-      <main className="container mt-5">
-        <AddItem addItem={addItem} />
-        <ProductList
-          productList={productList}
-          incrementQuantity={incrementQuantity}
-          decrementQuantity={decrementQuantity}
-          removeItem={removeItem}
-        />
-        <Aboutus/>
+    <BrowserRouter>
+      <Navbar />
+      <br />
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <AddItem addItem={addItem} />
+                <br />
+                <ProductList
+                  productList={productList}
+                  incrementQuantity={incrementQuantity}
+                  decrementQuantity={decrementQuantity}
+                  removeItem={removeItem}
+                  
+                />
+                 <Total totalAmount={totalAmount} resetQuantity={resetQuantity} />
+                 <br/>
+              </>
+            }
+          />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/contactinfo" element={<ContactInfo />} />
+          <Route path="/shippingdetails" element={<ShippingDetails />} />
+        </Routes>
       </main>
-      <Footer totalAmount={totalAmount} resetQuantity={resetQuantity} />
-    </>
+      <br />
+     
+        <Footer /> 
+    </BrowserRouter>
   );
 }
 

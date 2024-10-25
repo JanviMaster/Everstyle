@@ -27,19 +27,19 @@ const Aboutus = () => {
     <p>
     At [Your Store Name], you’ll find a wide range of products, including:
     <ul>
-    <li> – High-quality products designed to meet your everyday needs.</li>
-    <li> – Stylish and modern [type of product], perfect for any occasion.</li>
-    <li> – [Another product category] that combines innovation with functionality.</li>
+    <li> High-quality products designed to meet your everyday needs.</li>
+    <li> Stylish and modern [type of product], perfect for any occasion.</li>
+    <li> [Another product category] that combines innovation with functionality.</li>
     </ul>
     Our team works tirelessly to handpick each product, ensuring that it’s up to our quality standards and that we’re offering the best possible price. We believe in creating value for you in every way.
     </p>
     <h2>Why Shop With Us?</h2>
     <p>
-    Fast & Secure Shipping – We deliver across [countries/regions] with a variety of shipping options tailored to your needs.
-    Customer Support – Our support team is always here to assist you with any queries or concerns, ensuring a hassle-free experience from start to finish.
-    Easy Returns – If something doesn’t meet your expectations, our simple return policy makes it easy to get a refund or exchange.
-    Our Promise
-    We are committed to maintaining long-term relationships with our customers by offering a convenient shopping experience, top-quality products, and excellent customer service. [Your Store Name] is here to make your life easier and more enjoyable by bringing you the best of what’s out there.
+    Fast & Secure Shipping – We deliver across [countries/regions] with a variety of shipping options tailored to your needs.</p>
+    <p>Customer Support – Our support team is always here to assist you with any queries or concerns, ensuring a hassle-free experience from start to finish.</p>
+    <p>Easy Returns – If something doesn’t meet your expectations, our simple return policy makes it easy to get a refund or exchange.</p>
+    <h2>Our Promise</h2>
+    <p>We are committed to maintaining long-term relationships with our customers by offering a convenient shopping experience, top-quality products, and excellent customer service. [Your Store Name] is here to make your life easier and more enjoyable by bringing you the best of what’s out there.
     </p>
     <p>
     Thank you for being a part of our journey!
