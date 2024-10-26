@@ -12,7 +12,7 @@
 </ul>
 
 <h2 id="project-overview">Project Overview</h2>
-<p><strong>Shop It</strong> is an e-commerce platform where users can browse products, view details, and purchase items. The website is built using React for the front-end and <code>react-router-dom</code> for smooth navigation between pages. More advanced e-commerce features will be added soon.</p>
+<p><strong>Shop It</strong> is an e-commerce platform where users can browse products, view details, and purchase items. The website is built using React for the front-end. More advanced e-commerce features will be added soon.</p>
 
 <h2 id="features">Features</h2>
 <ul>
@@ -20,7 +20,7 @@
     <li><strong>Product Listing</strong>: A page to browse all available products.</li>
     <li><strong>Product Details</strong>: Detailed view of each product.</li>
     <li><strong>Shopping Cart</strong>: Allows users to add items to their cart and proceed to checkout (coming soon).</li>
-    <li><strong>Create Blog</strong>: A blog section to share updates and product insights (planned for future development).</li>
+    <li><strong>My Cart</strong>: A My cart section to check updates and product insights (planned for future development).</li>
 </ul>
 
 <h2 id="installation">Installation</h2>
