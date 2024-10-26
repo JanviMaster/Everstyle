@@ -3,10 +3,13 @@ import React from 'react'
 const ContactInfo = () => {
   return (
     <div>
-      <h1>Contact info</h1>
+      <center>
+      <h1>CONTACT INFO</h1>
       <p>
       We’re here to assist you with any questions or concerns.
       </p>
+      </center>
+      <br/>
     <h3>Email:</h3>
     <p>For inquiries and support, email us at: support@shopit.com </p>
 
@@ -22,11 +25,13 @@ const ContactInfo = () => {
 
     <h3>Contact Form:</h3>
     <p>Have a question? Fill out the form below, and we’ll get back to you within 24 hours.</p>
-
+    <br/>
+    <center>
     <h3>Follow Us on Social Media:</h3>
     <p>
     Facebook | Instagram | Twitter
       </p>
+      </center>
     </div>
   )
 }

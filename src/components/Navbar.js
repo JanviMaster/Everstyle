@@ -25,16 +25,17 @@ const Navbar = () => {
                 Customer support
               </NavLink>
               <ul className="dropdown-menu">
-                <li><NavLink className="dropdown-item" to="FAQ">FAQ</NavLink></li>
                 <li><NavLink className="dropdown-item" to="ReturnPolicy">Return policy </NavLink></li>
                 <li><NavLink className="dropdown-item" to="ShippingDetails">Shiping details </NavLink></li>
                 <li><NavLink className="dropdown-item" to="ContactInfo">Conact info</NavLink></li>
               </ul>
             </li>
           </ul>
+          
+          <NavLink className='btn' to="/Login">Log In</NavLink>
+          
+          <NavLink className="btn btn-outline-success" to="/mycart">My Cart</NavLink>
 
-          <button className='btn'>Log In</button>
-          <button className='btn btn-outline-success' type="submit">My Cart</button>
         </div>
       </div>
     </nav>

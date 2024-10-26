@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import AddItem from "../components/AddItem";
-import Navbar from '../components/Navbar';
-import { BrowserRouter } from 'react-router-dom';
+// import Navbar from '../components/Navbar';
+// import { BrowserRouter } from 'react-router-dom';
 import ProductList from '../components/ProductList';
-import Footer from '../components/Footer';
+import Total from "../components/Total";
+// import Footer from '../components/Footer';
 
 const Cart = () => {
   const products = [
@@ -71,14 +72,14 @@ const Cart = () => {
 
   return (
     <>
-       <BrowserRouter>
-        <Navbar />
+       {/* <BrowserRouter>
+        <Navbar /> */}
         {/* <nav>
           <NavLink to="/Explore">Explore</NavLink>
           <NavLink to="/Aboutus">About Us</NavLink>
           <NavLink to="/create">Create</NavLink>
         </nav> */}
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
 
       <main className="container mt-5">
         <AddItem addItem={addItem} />
@@ -88,8 +89,9 @@ const Cart = () => {
           decrementQuantity={decrementQuantity}
           removeItem={removeItem}
         />
+        <Total totalAmount={totalAmount} resetQuantity={resetQuantity} />
       </main>
-      <Footer totalAmount={totalAmount} resetQuantity={resetQuantity} />
+      {/* <Footer totalAmount={totalAmount} resetQuantity={resetQuantity} /> */}
     </>
     
   )

@@ -1,93 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import Aboutus from "./pages/Aboutus";
 import Cart from "./pages/Cart";
 import ContactInfo from "./pages/ContactInfo";
 import ShippingDetails from "./pages/ShippingDetails";
-import AddItem from "./components/AddItem";
-import Total from "./components/Total";
+import ReturnPolicy from "./pages/ReturnPolicy";
+import Explore from "./pages/Explore";
 
 function App() {
-  const products = [
-    { price: 99999, name: "IPhone 10S Max", quantity: 0 },
-    { price: 9999, name: "Redmi Note 10S Max", quantity: 0 },
-  ];
-
-  const [productList, setProductList] = useState(products);
-  const [totalAmount, setTotalAmount] = useState(0);
-
-  const incrementQuantity = (index) => {
-    let newProductList = [...productList];
-    newProductList[index].quantity++;
-    setTotalAmount(totalAmount + newProductList[index].price);
-    setProductList(newProductList);
-  };
-
-  const decrementQuantity = (index) => {
-    let newProductList = [...productList];
-    if (newProductList[index].quantity > 0) {
-      newProductList[index].quantity--;
-      setTotalAmount(totalAmount - newProductList[index].price);
-    }
-    setProductList(newProductList);
-  };
-
-  const resetQuantity = () => {
-    const newProductList = productList.map(product => ({ ...product, quantity: 0 }));
-    setProductList(newProductList);
-    setTotalAmount(0);
-  };
-
-  const removeItem = (index) => {
-    let newProductList = [...productList];
-    let newTotalAmount = totalAmount;
-    newTotalAmount -= newProductList[index].quantity * newProductList[index].price;
-    newProductList.splice(index, 1);
-    setProductList(newProductList);
-    setTotalAmount(newTotalAmount);
-  };
-
-  const addItem = (name, price) => {
-    setProductList([...productList, { price, name, quantity: 0 }]);
-  };
 
   return (
     <BrowserRouter>
       <Navbar />
-      <br />
-      <main>
+      <main className="home">
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <AddItem addItem={addItem} />
-                <br />
-                <ProductList
-                  productList={productList}
-                  incrementQuantity={incrementQuantity}
-                  decrementQuantity={decrementQuantity}
-                  removeItem={removeItem}
-                  
-                />
-                 <Total totalAmount={totalAmount} resetQuantity={resetQuantity} />
-                 <br/>
+                <h1> The main content</h1>
               </>
             }
           />
+          
+          <Route path="/explore" element={<Explore />} />
           <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/cart" element={<Cart />} />
           <Route path="/contactinfo" element={<ContactInfo />} />
           <Route path="/shippingdetails" element={<ShippingDetails />} />
+          <Route path="/returnpolicy" element={<ReturnPolicy />} />
+          <Route path="/mycart" element={<Cart />} />
+          {/* <Route path="/Login" element={<Login/>} /> */}
         </Routes>
       </main>
-      <br />
-     
-        <Footer /> 
+      
+      <Footer /> 
     </BrowserRouter>
   );
 }
