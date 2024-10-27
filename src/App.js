@@ -9,6 +9,7 @@ import ContactInfo from "./pages/ContactInfo";
 import ShippingDetails from "./pages/ShippingDetails";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import Explore from "./pages/Explore";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
             path="/"
             element={
               <>
-                <h1> The main content</h1>
+                <Dashboard/>
               </>
             }
           />

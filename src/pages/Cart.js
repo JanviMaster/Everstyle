@@ -72,15 +72,6 @@ const Cart = () => {
 
   return (
     <>
-       {/* <BrowserRouter>
-        <Navbar /> */}
-        {/* <nav>
-          <NavLink to="/Explore">Explore</NavLink>
-          <NavLink to="/Aboutus">About Us</NavLink>
-          <NavLink to="/create">Create</NavLink>
-        </nav> */}
-      {/* </BrowserRouter> */}
-
       <main className="container mt-5">
         <AddItem addItem={addItem} />
         <ProductList

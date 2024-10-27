@@ -7,7 +7,7 @@ const ReturnPolicy = () => {
       <center><h1>RETURN POLICY</h1></center>
 
     <p>
-      At Shop It, your satisfaction is our priority. If you are not fully satisfied with your purchase, our return policy allows you to return or exchange items easily.
+      At Everstyle, your satisfaction is our priority. If you are not fully satisfied with your purchase, our return policy allows you to return or exchange items easily.
     </p><br/><br/>
 
       <h2>Eligibility for Returns:</h2>
@@ -37,7 +37,7 @@ const ReturnPolicy = () => {
     <h2>Ship Your Return:</h2>
 
     <p>Send the package to the following address: Returns Department
-    123 E-commerce St, City, Country
+    123 E-commerce St, Mumbai, India.
     </p><br/>
 
     <h2>Refund Policy:</h2>
@@ -50,7 +50,7 @@ const ReturnPolicy = () => {
     <h2>Exchanges:</h2>
 
     <p>Exchanges are accepted for items that are the wrong size or color, and must be requested within 14 days of receipt.
-    To exchange an item, contact us at support@shopit.com with the details of the item you wish to exchange and the preferred size/color.
+    To exchange an item, contact us at support@everstyle.com with the details of the item you wish to exchange and the preferred size/color.
     Exchanges are subject to product availability. If the item is unavailable, a refund will be processed.
     </p><br/>
 
@@ -71,14 +71,14 @@ const ReturnPolicy = () => {
 
     <h2>Damaged or Defective Items:</h2>
 
-    <p>If you received a damaged, defective, or incorrect item, please contact us immediately at support@shopit.com with your order number and details about the product.
+    <p>If you received a damaged, defective, or incorrect item, please contact us immediately at support@everstyle.com with your order number and details about the product.
     We will cover the return shipping cost and send a replacement item.
     </p><br/>
 
     <h3>Late or Missing Refunds:</h3>
 
     <p>If you haven’t received your refund within 7 business days, please check with your bank or credit card company, as processing times may vary.
-    If you’ve done all of this and still have not received your refund, please contact us at support@shopit.com.
+    If you’ve done all of this and still have not received your refund, please contact us at support@everstyle.com.
       </p><br/>
 
     </div>
