@@ -33,6 +33,8 @@ const Footer = () => {
 
         <div className="footer-section social">
           <h4>Follow Us</h4>
+          Facebook | Instagram | Twitter
+
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook-f"></i>
           </a>

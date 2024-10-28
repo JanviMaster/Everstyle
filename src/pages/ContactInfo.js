@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import './Page.css'
 
 const ContactInfo = () => {
   return (
-    <div>
+    <>
+    <div style={{ padding: '70px' }}>
       <center>
       <h1>CONTACT INFO</h1>
       <p>
@@ -33,6 +36,8 @@ const ContactInfo = () => {
       </p>
       </center>
     </div>
+    <Footer /> 
+    </>
   )
 }
 

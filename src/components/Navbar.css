@@ -2,19 +2,18 @@
 
 .navbar { 
     padding: 1rem;
-    background-color: rgb(48, 35, 70); 
+    background-color: rgb(57, 51, 51); 
   }
   
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-
   }
   
   .navbar-toggler {
     border: none;
-    background-color:rgb(58, 36, 99) ;
+    background-color:rgb(57, 51, 51);
   }
   
   .navbar-toggler-icon {
@@ -37,18 +36,18 @@
   }
   
   .dropdown-menu {
-    background-color:rgb(58, 36, 99);
+    background-color:rgb(57, 51, 51);
     border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgb(67, 62, 62);
   }
   
   .dropdown-menu .dropdown-item {
     color: white;
-    background-color: rgb(58, 36, 99);
+    background-color: rgb(57, 51, 51);
   }
   
   .dropdown-menu  {
-    background-color: rgb(58, 36, 99);
+    background-color: rgb(57, 51, 51);
   }
 
   .dropdown-item:hover{
@@ -56,7 +55,7 @@
   }
 
   .btn {
-    background-color:  rgb(48, 35, 70) ;
+    background-color:   rgb(49, 46, 46) ;
     color: white;
     font-weight: 600;
     border: none;
@@ -67,18 +66,18 @@
   .btn-outline-success {
     color:white;
     border: 2px solid white;
-    background-color: rgb(58, 36, 99);
+    background-color: rgb(57, 51, 51);
   }
   
   .btn-outline-success:hover {
-    background-color:  rgb(48, 35, 70) ;
+    background-color:   rgb(49, 46, 46);
     color: white;
     outline-color: whitesmoke;
   }
   
   
   .offcanvas {
-    background-color: rgb(58, 36, 99);
+    background-color: rgb(57, 51, 51);
   }
   
   .offcanvas-header {
@@ -95,11 +94,11 @@
   }
   
   .offcanvas-body .nav-link:hover {
-    color:  rgb(48, 35, 70);
+    color:   rgb(49, 46, 46);
   }
 
   .btn:hover{
-    background-color: rgb(58, 36, 99);
+    background-color: rgb(57, 51, 51);
     color:white;
   }
   

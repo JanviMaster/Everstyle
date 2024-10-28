@@ -34,7 +34,9 @@ const Navbar = () => {
           
           <NavLink className='btn' to="/Login">Log In</NavLink>
           
-          <NavLink className="btn btn-outline-success" to="/mycart">My Cart</NavLink>
+          <NavLink className="btn btn-outline-success" to="/mycart">
+          {/* <i className="bi bi-cart" /> */}
+          My Cart</NavLink>
 
         </div>
       </div>

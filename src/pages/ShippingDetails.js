@@ -1,7 +1,12 @@
 import React from 'react';
+import Footer from '../components/Footer'
+import './Page.css'
 
 const ShippingDetails = () => {
   return (
+    <>
+   <div style={{ padding: '70px' }}>
+
     <div className="shipping-details">
       <center><h1>SHIPPING DETAIILS</h1>
 
@@ -47,7 +52,11 @@ const ShippingDetails = () => {
       <br/>
       <h2>Contact Us</h2>
       <p>If you have questions or need help with your order, our support team is here for you. Contact us at <a href="mailto:support@everstyle.com">support@everstyle.com</a> or call us at <strong>+1-800-123-4567</strong>.</p>
+      
     </div>
+    </div>
+    <Footer /> 
+    </>
   );
 };
 

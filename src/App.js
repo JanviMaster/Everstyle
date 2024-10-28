@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Aboutus from "./pages/Aboutus";
 import Cart from "./pages/Cart";
 import ContactInfo from "./pages/ContactInfo";
@@ -37,7 +37,7 @@ function App() {
         </Routes>
       </main>
       
-      <Footer /> 
+      {/* <Footer />  */}
     </BrowserRouter>
   );
 }

@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import './Page.css'
 
 const ReturnPolicy = () => {
   return (
-    <div>
+    <>
+        <div style={{ padding: '70px' }}>
 
       <center><h1>RETURN POLICY</h1></center>
 
@@ -80,8 +83,9 @@ const ReturnPolicy = () => {
     <p>If you haven’t received your refund within 7 business days, please check with your bank or credit card company, as processing times may vary.
     If you’ve done all of this and still have not received your refund, please contact us at support@everstyle.com.
       </p><br/>
-
-    </div>
+      </div>
+      <Footer /> 
+    </>
   )
 }
 

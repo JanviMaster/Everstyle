@@ -4,6 +4,9 @@ import AddItem from "../components/AddItem";
 // import { BrowserRouter } from 'react-router-dom';
 import ProductList from '../components/ProductList';
 import Total from "../components/Total";
+import Footer from '../components/Footer'
+import './Page.css'
+
 // import Footer from '../components/Footer';
 
 const Cart = () => {
@@ -72,7 +75,10 @@ const Cart = () => {
 
   return (
     <>
+    <div style={{ padding: '50px' }}>
+      <center>
       <main className="container mt-5">
+        <h1>My Cart</h1><br/>
         <AddItem addItem={addItem} />
         <ProductList
           productList={productList}
@@ -81,8 +87,11 @@ const Cart = () => {
           removeItem={removeItem}
         />
         <Total totalAmount={totalAmount} resetQuantity={resetQuantity} />
+       
       </main>
-      {/* <Footer totalAmount={totalAmount} resetQuantity={resetQuantity} /> */}
+      </center>
+      </div>
+      <Footer /> 
     </>
     
   )
