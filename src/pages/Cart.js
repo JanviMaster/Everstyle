@@ -78,7 +78,7 @@ const Cart = () => {
     <div style={{ padding: '50px' }}>
       <center>
       <main className="container mt-5">
-        <h1>My Cart</h1><br/>
+        <p className="head">MY CART</p><br/>
         <AddItem addItem={addItem} />
         <ProductList
           productList={productList}

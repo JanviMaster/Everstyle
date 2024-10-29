@@ -1,29 +1,32 @@
-import React from 'react';
+import React from 'react'; 
 import Footer from '../components/Footer';
-import './Page.css';
+import './Explore.css';
 import Everstyle7 from '../assets/Everstyle7.jpeg';
 import Everstyle4 from '../assets/Everstyle4.jpeg';
 import Everstyle8 from '../assets/Everstyle8.jpeg';
+import Everstyle12 from '../assets/Everstyle12.jpeg';
+import Everstyle13 from '../assets/Everstyle13.jpeg';
+import Everstyle14 from '../assets/Everstyle14.jpeg';
+
 import { Link } from 'react-router-dom';
 
 const Card = ({ title, text, image, price, specs }) => {
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <img src={image} className="card-img-top" alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{text}</p>
+    <div className="explore-card">
+      <img src={image} className="explore-card-img-top" alt={title} />
+      <div className="explore-card-body">
+        <h5 className="explore-card-title">{title}</h5>
+        <p className="explore-card-text">{text}</p>
       </div>
-      <ul className="list-group list-group-flush">
+      <ul className="explore-list-group list-group-flush">
         {specs.map((spec, index) => (
-          <li key={index} className="list-group-item">{spec}</li>
+          <li key={index} className="explore-list-group-item">{spec}</li>
         ))}
-        <li className="list-group-item">Rs {price}</li>
-        <li className="list-group-item">SHOP NOW</li>
+        <li className="explore-list-group-item">Rs {price}</li>
       </ul>
-      <div className="card-body">
-        <Link to="#" className="card-link">Card link</Link>
-        <Link to="#" className="card-link">Another link</Link>
+      <div className="explore-card-body">
+        <Link to="#" className="explore-card-link">SHOP NOW</Link>
+        <Link to="#" className="explore-card-link">See more..</Link>
       </div>
     </div>
   );
@@ -31,6 +34,27 @@ const Card = ({ title, text, image, price, specs }) => {
 
 const Explore = () => {
   const cardData = [
+    {
+      title: "Black floral Maxi Dresss",
+      text: "Littlebox",
+      image: Everstyle14,
+      price: 2870,
+      specs: ["Maxi", "Polyester", "Regular"]
+    },
+    {
+      title: "Pink Sifon maxi dress",
+      text: "Myntra",
+      image: Everstyle13,
+      price: 3580,
+      specs: ["Ethnic", "Embroidered", "Motifs"]
+    },
+    {
+      title: "Women's night blue printed suit",
+      text: "Ajio",
+      image: Everstyle12,
+      price: 5789,
+      specs: ["Regular", "Print"]
+    },
     {
       title: "Mesh Ruffle Green Maxi Dress",
       text: "Littlebox",
@@ -46,29 +70,30 @@ const Explore = () => {
       specs: ["Ethnic", "Embroidered", "Motifs"]
     },
     {
-      title: " Womens night blue printed suit",
+      title: "Women's night blue printed suit",
       text: "Ajio",
       image: Everstyle4,
       price: 5789,
-      specs: ["Rgular", "Print"]
+      specs: ["Regular", "Print"]
     }
   ];
 
   return (
     <>
       <div style={{ padding: '70px' }}>
-        <h1>Explore</h1>
-      
-        {cardData.map((data, index) => (
-          <Card
-            key={index}
-            title={data.title}
-            text={data.text}
-            image={data.image}
-            price={data.price}
-            specs={data.specs}
-          />
-        ))}
+        <center><p className='head'>EXPLORE</p></center>
+        <div className="explore-card-container">
+          {cardData.map((data, index) => (
+            <Card
+              key={index}
+              title={data.title}
+              text={data.text}
+              image={data.image}
+              price={data.price}
+              specs={data.specs}
+            />
+          ))}
+        </div>
       </div>
       <Footer /> 
     </>

@@ -57,8 +57,18 @@ const Dashboard = () => {
     return (
         <>
             <div style={{ padding: '70px' }}>
+               
                 <Carousel images={carouselImages} />
-                <br /><br />
+                <br />
+
+                <center><p className='small-head'>One stop destination for all your wadrobe essentials </p>
+                <br/>
+                <h3 className='head'> EVERMORE,<br/>
+                    VERSETILE,<br/>
+                    EVERSTYLE.
+                </h3>
+                </center>
+                <br />
                 
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     <center><Card title="Statement dressing" text="Unleash the boldest look - where style meets statement" imgSrc={Everstyle7} /></center>

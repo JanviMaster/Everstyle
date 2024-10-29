@@ -1,0 +1,170 @@
+/* Explore.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+    font-family: 'Montserrat';
+}
+
+.head{
+    font-size:4rem;
+}
+/* Container for Explore cards */
+.explore-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensures equal height for all cards */
+    gap: 20px; /* Space between cards */
+    flex-wrap: nowrap; /* Keeps all cards on the same line */
+    overflow-x: auto; /* Allows horizontal scrolling if cards exceed screen width */
+    padding: 20px 0;
+}
+
+/* Individual Explore card styling */
+.explore-card {
+    height: 700px; /* Set a uniform height for all cards */
+    width: 16rem; /* Adjust width to make the card look smaller */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Smooth card edges */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+}
+
+/* Card image styling */
+.explore-card-img-top {
+    height: 360px; /* Set image height for uniformity */
+    object-fit: cover; /* Ensure image covers the allocated space */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Card body styling */
+.explore-card-body {
+    padding: 10px;
+    flex: 1; /* Allows the card body to grow and fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explore-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.explore-card-text {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* List group styling for specs and price */
+.explore-list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.explore-list-group-item {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 5px 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Card links styling */
+.explore-card-link {
+    font-size: 0.9rem;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.explore-card-link:hover {
+    color: #004aad;
+}
+/* Explore.css */
+
+.head {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Card container styling */
+  .explore-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual card styling */
+  .explore-card {
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .explore-card-img-top {
+    height: 370px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .explore-card-body {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .explore-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .explore-card-text {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .explore-list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .explore-list-group-item {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 5px 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .explore-card-link {
+    font-size: 0.9rem;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .explore-card-link:hover {
+    color: #004aad;
+  }
+  .head{
+    font-size:4rem;
+}
+  

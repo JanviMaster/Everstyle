@@ -6,7 +6,7 @@ const Aboutus = () => {
   return (
     <>
     <div style={{ padding: '70px' }}>
-    <center><h1>ABOUT US</h1></center>
+    <center><p className='head'>ABOUT US</p></center>
     <br/>
       <h2>Who We Are</h2>
       <p>

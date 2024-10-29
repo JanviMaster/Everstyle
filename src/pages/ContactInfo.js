@@ -7,7 +7,7 @@ const ContactInfo = () => {
     <>
     <div style={{ padding: '70px' }}>
       <center>
-      <h1>CONTACT INFO</h1>
+      <p className='head'>CONTACT INFO</p>
       <p>
       We’re here to assist you with any questions or concerns.
       </p>
