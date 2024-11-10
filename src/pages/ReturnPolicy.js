@@ -66,7 +66,7 @@ const ReturnPolicy = () => {
     Digital products (e.g., eBooks, downloadable software)
     </p><br/>
 
-    <h3>Return Shipping Costs:</h3>
+    <h2>Return Shipping Costs:</h2>
 
     <p>You will be responsible for paying your own shipping costs for returning items, except in cases where the item is defective or incorrect.
     We recommend using a trackable shipping service or purchasing shipping insurance, as we cannot guarantee that we will receive your returned item.
@@ -78,7 +78,7 @@ const ReturnPolicy = () => {
     We will cover the return shipping cost and send a replacement item.
     </p><br/>
 
-    <h3>Late or Missing Refunds:</h3>
+    <h2>Late or Missing Refunds:</h2>
 
     <p>If you haven’t received your refund within 7 business days, please check with your bank or credit card company, as processing times may vary.
     If you’ve done all of this and still have not received your refund, please contact us at support@everstyle.com.

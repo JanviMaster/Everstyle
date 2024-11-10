@@ -1,44 +1,49 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import "./App.css";
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import ForgotPassword from './pages/ForgotPassword';
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
 import Aboutus from "./pages/Aboutus";
 import Cart from "./pages/Cart";
 import ContactInfo from "./pages/ContactInfo";
 import ShippingDetails from "./pages/ShippingDetails";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import Explore from "./pages/Explore";
-import Dashboard from "./pages/Dashboard";
+import { AuthProvider } from './context/AuthContext';
+import './App.css';
+// import Main from './pages/Main';
 
 function App() {
-
   return (
-    <BrowserRouter>
-      <Navbar />
-      <main className="home">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Dashboard/>
-              </>
-            }
-          />
-          
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/contactinfo" element={<ContactInfo />} />
-          <Route path="/shippingdetails" element={<ShippingDetails />} />
-          <Route path="/returnpolicy" element={<ReturnPolicy />} />
-          <Route path="/mycart" element={<Cart />} />
-          {/* <Route path="/Login" element={<Login/>} /> */}
-        </Routes>
-      </main>
-      
-      {/* <Footer />  */}
-    </BrowserRouter>
+    <div style={{ backgroundColor: '#393E46', minHeight: '100vh' }}>
+      <Router>
+        <AuthProvider>
+          <Navbar />
+          <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: '100vh' }}>
+            <div className="w-100" style={{ maxWidth: '400px', boxShadow: 'none' }}>
+              <Routes>
+                {/* Authentication Routes */}
+                <Route path="/" element={<Dashboard/>} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                
+                {/* E-commerce Routes */}
+                <Route path="/explore" element={<Explore />} />
+                <Route path="/aboutus" element={<Aboutus />} />
+                <Route path="/contactinfo" element={<ContactInfo />} />
+                <Route path="/shippingdetails" element={<ShippingDetails />} />
+                <Route path="/returnpolicy" element={<ReturnPolicy />} />
+                <Route path="/mycart" element={<Cart />} />
+              </Routes>
+            </div>
+          </Container>
+        </AuthProvider>
+      </Router>
+    </div>
   );
 }
 
