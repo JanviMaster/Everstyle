@@ -1,6 +1,6 @@
 import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword,sendPasswordResetEmail } from 'firebase/auth';
 import { useEffect, useState, createContext, useContext } from 'react';
-import { app } from '../firebase'; 
+import { app } from '../firebase'; // Assuming 'app' is your Firebase app
 
 const auth = getAuth(app);
 

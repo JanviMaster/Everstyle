@@ -32,12 +32,13 @@ const Aboutus = () => {
     <br/>
     <h2>What We Offer</h2>
     <p>
-    At Everstyle, you’ll find a wide range of products, including:
+    At Everstyle, you’ll find a wide range of products, including:</p>
     <ul>
     <li> High-quality products designed to meet your everyday needs.</li>
     <li> Stylish and modern dresses, perfect for any occasion.</li>
     <li> Styles that combines innovation with functionality.</li>
     </ul>
+    <p>
     Our team works tirelessly to handpick each product, ensuring that it’s up to our quality standards and that we’re offering the best possible price. We believe in creating value for you in every way.
     </p>
     <br/>
@@ -51,10 +52,8 @@ const Aboutus = () => {
     <p>We are committed to maintaining long-term relationships with our customers by offering a convenient shopping experience, top-quality products, and excellent customer service. Evverstyle is here to make your life easier and more enjoyable by bringing you the best of what’s out there.
     </p>
     <br/>
-    <p>
-     <center>
+    <p style={{ textAlign: "center" }}>
     Thank you for being a part of our journey!
-    </center> 
     </p>
     </div>
     <Footer /> 

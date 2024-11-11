@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
@@ -14,16 +14,19 @@ import ReturnPolicy from "./pages/ReturnPolicy";
 import Explore from "./pages/Explore";
 import { AuthProvider } from './context/AuthContext';
 import './App.css';
+// import Footer from './components/Footer';
 // import Main from './pages/Main';
 
 function App() {
   return (
-    <div style={{ backgroundColor: '#393E46', minHeight: '100vh' }}>
+    // <div style={{ backgroundColor: '#393E46', minHeight: '100vh' }}>
+      <div>
       <Router>
         <AuthProvider>
           <Navbar />
-          <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: '100vh' }}>
-            <div className="w-100" style={{ maxWidth: '400px', boxShadow: 'none' }}>
+          {/* <Container > */}
+            {/* <div className="w-100" style={{ maxWidth: '400px', boxShadow: 'none' }}> */}
+            {/* <div> */}
               <Routes>
                 {/* Authentication Routes */}
                 <Route path="/" element={<Dashboard/>} />
@@ -39,8 +42,8 @@ function App() {
                 <Route path="/returnpolicy" element={<ReturnPolicy />} />
                 <Route path="/mycart" element={<Cart />} />
               </Routes>
-            </div>
-          </Container>
+            {/* </div> */}
+          {/* </Container> */}
         </AuthProvider>
       </Router>
     </div>
