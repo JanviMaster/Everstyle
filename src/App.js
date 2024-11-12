@@ -31,8 +31,8 @@ function App() {
                 {/* Authentication Routes */}
                 <Route path="/" element={<Dashboard/>} />
                 <Route path="/signup" element={<Signup />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/login"  element={<Login />} />
+                <Route path="/forgot-password" className="w-100" style={{ maxWidth: '400px', boxShadow: 'none' }} element={<ForgotPassword />} />
                 
                 {/* E-commerce Routes */}
                 <Route path="/explore" element={<Explore />} />

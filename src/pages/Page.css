@@ -6,21 +6,21 @@ body {
 }
 
 h1 {
-    font-size: 3rem; /* Main heading size */
-    font-weight: 700; /* Bold for emphasis */
+    font-size: 3rem; 
+    font-weight: 700; 
     text-align: center;
     color: #333;
 }
 
 h2 {
-    font-size: 2rem; /* Subheading size */
+    font-size: 2rem; 
     font-weight: 600;
     color: #555;
     margin-top: 1rem;
 }
 
 p {
-    font-size: 1.1rem; /* Ensuring readability for paragraphs */
+    font-size: 1.1rem; 
     line-height: 1.6;
     color: #666;
 }

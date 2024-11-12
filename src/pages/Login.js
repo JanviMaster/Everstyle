@@ -29,6 +29,7 @@ export default function Login() {
     return (
         <div>
             <Card className='container border-300' style={{ backgroundColor: '#222831',color:"whitesmoke",boxShadow:"0px 0px 5px black"}}>
+            {/* rgb(57, 51, 51)' 222831*/}
                 <Card.Body>
                     <h2 className='text-center mb-4'>Login</h2>
                     {error && <Alert variant='danger'>{error}</Alert>}
