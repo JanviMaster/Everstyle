@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Card, Form, Button, Alert } from 'react-bootstrap';
 import "../App.css";
-import { useAuth } from '../context/AuthContext';
+// import { useAuth } from '../firebase/AuthContext';
+import { useAuth } from '../components/AuthContext';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
