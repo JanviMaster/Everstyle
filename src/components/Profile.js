@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
@@ -46,7 +47,7 @@ function Profile() {
           <div>
             <p>Email: {userDetails.email}</p>
             <p>First Name: {userDetails.firstName}</p>
-            {/* <p>Last Name: {userDetails.lastName}</p> */}
+            <p>Last Name: {userDetails.lastName}</p>
           </div>
           <button className="btn btn-primary" onClick={handleLogout}>
             Logout

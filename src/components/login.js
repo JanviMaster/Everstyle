@@ -1,11 +1,11 @@
+
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "./firebase";
+
 import { toast } from "react-toastify";
 import SignInwithGoogle from "./signInwithGoogle";
 import { Link } from "react-router-dom";
-// import '../App.css';
-// import '../App.css';
 import './Login.css';
 
 function Login() {
@@ -78,6 +78,7 @@ function Login() {
 }
 
 export default Login;
+
 
 // import React, { useRef, useState } from 'react';
 // import { Card, Form, Button, Alert } from 'react-bootstrap';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './pages/Signup';
-import Login from './components/login';
+import Login from './components/Login';
 import Dashboard from './pages/Dashboard';
 import ForgotPassword from './pages/ForgotPassword';
 import Navbar from './components/Navbar';
@@ -12,7 +12,7 @@ import ShippingDetails from "./pages/ShippingDetails";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import Explore from "./pages/Explore";
 import { AuthProvider } from './components/AuthContext';
-import Register from './components/register';
+import Register from './components/Register';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
           <Navbar />
           <Routes>
             {/* Authentication Routes */}
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/signup" element={<Signup />} />
+             <Route path="/" element={<Dashboard />} />
+            <Route path="/signup" element={<Signup />} /> 
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
