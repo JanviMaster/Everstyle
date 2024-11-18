@@ -3,34 +3,34 @@ import React, { useState } from "react";
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
-import { NavLink } from "react-router-dom";
+import { useNavigate ,NavLink} from "react-router-dom";
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
+  const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       const user = auth.currentUser;
-      console.log(user);
       if (user) {
         await setDoc(doc(db, "Users", user.uid), {
           email: user.email,
           firstName: fname,
           lastName: lname,
-          photo:""
         });
+        console.log("User Registered Successfully!");
+        toast.success("User Registered Successfully!", {
+          position: "top-center",
+        });
+        navigate("/login"); // Redirect to login page
       }
-      console.log("User Registered Successfully!!");
-      toast.success("User Registered Successfully!!", {
-        position: "top-center",
-      });
     } catch (error) {
-      console.log(error.message);
+      console.error(error.message);
       toast.error(error.message, {
         position: "bottom-center",
       });
@@ -42,32 +42,35 @@ function Register() {
       <h3>Sign Up</h3>
 
       <div className="mb-3">
-        <label>First name</label>
+        <label>First Name</label>
         <input
           type="text"
           className="form-control"
-          placeholder="First name"
+          placeholder="Enter first name"
+          value={fname}
           onChange={(e) => setFname(e.target.value)}
           required
         />
       </div>
 
       <div className="mb-3">
-        <label>Last name</label>
+        <label>Last Name</label>
         <input
           type="text"
           className="form-control"
-          placeholder="Last name"
+          placeholder="Enter last name"
+          value={lname}
           onChange={(e) => setLname(e.target.value)}
         />
       </div>
 
       <div className="mb-3">
-        <label>Email address</label>
+        <label>Email Address</label>
         <input
           type="email"
           className="form-control"
           placeholder="Enter email"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
@@ -79,6 +82,7 @@ function Register() {
           type="password"
           className="form-control"
           placeholder="Enter password"
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
@@ -86,17 +90,18 @@ function Register() {
 
       <div className="d-grid">
         <button type="submit" className="btn btn-primary">
-          <NavLink to="/register" className="nav-link">Register</NavLink>
-
+          Register
         </button>
       </div>
-      <p className="forgot-password text-right">
-        Already registered 
-        <a href="/login">Login</a>
-        <NavLink to="/login" className="nav-link">Login</NavLink>
 
+      <p className="forgot-password text-right">
+        Already registered?{" "}
+        <NavLink to="/login" className="nav-link">
+          Login
+        </NavLink>
       </p>
     </form>
   );
 }
+
 export default Register;

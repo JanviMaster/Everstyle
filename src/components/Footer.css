@@ -1,6 +1,6 @@
 .footer {
     background-color:  rgb(57, 51, 51);
-    color: #fff;
+    color: #493129;
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
@@ -50,7 +50,9 @@
   }
   
   .footer-section .social a {
-    color: #fff;
+    /* color: #fff; */
+    color: 493129;
+
     font-size: 20px;
     margin-right: 10px;
     text-decoration: none;

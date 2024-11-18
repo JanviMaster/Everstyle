@@ -5,7 +5,7 @@ import './Page.css'
 const ShippingDetails = () => {
   return (
     <>
-   <div style={{ padding: '70px' }}>
+   <div className='everstyle-main' style={{ padding: '70px' }}>
 
     <div className="shipping-details">
       <center><h1>SHIPPING DETAIILS</h1>

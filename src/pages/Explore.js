@@ -80,7 +80,7 @@ const Explore = () => {
 
   return (
     <>
-      <div style={{ padding: '70px' }}>
+      <div className='everstyle-main' style={{ padding: '70px' }}>
         <center><p className='head'>EXPLORE</p></center>
         <div className="explore-card-container">
           {cardData.map((data, index) => (

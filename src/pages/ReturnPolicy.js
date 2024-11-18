@@ -5,7 +5,7 @@ import './Page.css'
 const ReturnPolicy = () => {
   return (
     <>
-        <div style={{ padding: '70px' }}>
+        <div className='everstyle-main' style={{ padding: '70px' }}>
 
       <center><h1>RETURN POLICY</h1></center>
 

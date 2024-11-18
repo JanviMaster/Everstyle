@@ -75,7 +75,7 @@ const Cart = () => {
 
   return (
     <>
-    <div style={{ padding: '50px' }}>
+    <div className='everstyle-main' style={{ padding: '50px' }}>
       <center>
       <main className="container mt-5">
         <p className="head">MY CART</p><br/>

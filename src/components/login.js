@@ -32,6 +32,7 @@ function Login() {
 
   return (
     <>
+    <div className='everstyle-main' style={{ padding: '70px' }}>
     <div className="Login-App">
         <div className="Login-auth-wrapper">
           <div className="Login-auth-inner">
@@ -70,6 +71,7 @@ function Login() {
       </p>
       <SignInwithGoogle/>
     </form>
+    </div>
     </div>
     </div>
     </div>

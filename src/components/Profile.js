@@ -1,37 +1,50 @@
-
 import React, { useEffect, useState } from "react";
 import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 function Profile() {
   const [userDetails, setUserDetails] = useState(null);
-  const fetchUserData = async () => {
-    auth.onAuthStateChanged(async (user) => {
-      console.log(user);
+  const [loading, setLoading] = useState(true);
 
-      const docRef = doc(db, "Users", user.uid);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        setUserDetails(docSnap.data());
-        console.log(docSnap.data());
-      } else {
-        console.log("User is not logged in");
-      }
-    });
-  };
   useEffect(() => {
-    fetchUserData();
+    const unsubscribe = auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        try {
+          const docRef = doc(db, "Users", user.uid);
+          const docSnap = await getDoc(docRef);
+
+          if (docSnap.exists()) {
+            setUserDetails(docSnap.data());
+          } else {
+            console.error("No user document found!");
+          }
+        } catch (error) {
+          console.error("Error fetching user data:", error.message);
+        }
+      } else {
+        console.log("No user is logged in");
+        window.location.href = "/login"; // Redirect to login if no user
+      }
+      setLoading(false);
+    });
+
+    return () => unsubscribe(); // Clean up the listener on unmount
   }, []);
 
-  async function handleLogout() {
+  const handleLogout = async () => {
     try {
       await auth.signOut();
-      window.location.href = "/login";
       console.log("User logged out successfully!");
+      window.location.href = "/login";
     } catch (error) {
       console.error("Error logging out:", error.message);
     }
+  };
+
+  if (loading) {
+    return <p>Loading...</p>;
   }
+
   return (
     <div>
       {userDetails ? (
@@ -39,24 +52,30 @@ function Profile() {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img
               src={userDetails.photo}
+              alt={`${userDetails.firstName}'s profile`}
               width={"40%"}
               style={{ borderRadius: "50%" }}
             />
-          </div>
-          <h3>Welcome {userDetails.firstName} 🙏🙏</h3>
+          
+          <h3>Welcome {userDetails.firstName} 🙏</h3>
           <div>
-            <p>Email: {userDetails.email}</p>
-            <p>First Name: {userDetails.firstName}</p>
-            <p>Last Name: {userDetails.lastName}</p>
+            <p><strong>Email:</strong> {userDetails.email}</p>
+            <p><strong>First Name:</strong> {userDetails.firstName}</p>
+            <p><strong>Last Name:</strong> {userDetails.lastName || "Not provided"}</p>
           </div>
           <button className="btn btn-primary" onClick={handleLogout}>
             Logout
           </button>
+          </div>
         </>
       ) : (
-        <p>Loading...</p>
+        <div>
+        <br/><br/><br/><br/>
+        <center><h1>You have successfully logged in!</h1></center>
+        </div>
       )}
     </div>
   );
 }
+
 export default Profile;

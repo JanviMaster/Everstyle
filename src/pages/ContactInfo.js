@@ -5,7 +5,7 @@ import './Page.css'
 const ContactInfo = () => {
   return (
     <>
-    <div style={{ padding: '70px' }}>
+    <div className='everstyle-main' style={{ padding: '70px' }}>
       <center>
       <p className='head'>CONTACT INFO</p>
       <p>

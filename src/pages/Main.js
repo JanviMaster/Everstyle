@@ -18,7 +18,7 @@ export default function Main() {
     }
   }
   return (
-    <div style={{color:"whitesmoke"}}>
+    <div className='everstyle-main' style={{color:"whitesmoke"}}>
       <Card>
         <Card.Body>
           <h2 className='text-center '>Profile</h2>

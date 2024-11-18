@@ -31,7 +31,8 @@ export default function Signup() {
     }
 
     return (
-        <div>
+        <>
+           <div className='everstyle-main' style={{ padding: '70px' }}>
             <Card className='container border-300' style={{ backgroundColor: ' rgb(57, 51, 51)',color:"whitesmoke",boxShadow:"0px 0px 5px black"}}>
                 <Card.Body>
                     <h2 className='text-center mb-4'>SignUp</h2>
@@ -57,5 +58,6 @@ export default function Signup() {
                 Already have an account? <Link to='/login' className="text-primary" style={{fontSize:"2.1vH",textDecoration:'none'}}>Login</Link>
             </div>
         </div>
+        </>
     )
 }

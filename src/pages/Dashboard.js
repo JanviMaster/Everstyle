@@ -56,7 +56,7 @@ const Dashboard = () => {
 
     return (
         <>
-            <div style={{ padding: '70px' }}>
+            <div className='everstyle-main' style={{ padding: '70px' }}>
                
                 <Carousel images={carouselImages} />
                 <br />
