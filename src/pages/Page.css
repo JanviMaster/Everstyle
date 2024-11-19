@@ -6,34 +6,41 @@ body {
 }
 
 .everstyle-main{
-    background-color: #FFEBD8;
+    background-color:#93d3c9;
     /* rgb(255,235,216) */
 }
 h1 {
     font-size: 3rem; 
     font-weight: 700; 
     text-align: center;
-    color: #493129;
+    color:#567C8D ;
 }
 
 h2 {
     font-size: 2rem; 
     font-weight: 600;
-    color: #493129;
+    color: #567C8D;
     margin-top: 1rem;
 }
 
 p {
     font-size: 1.1rem; 
     line-height: 1.6;
-    color: #493129;
+    color:#567C8D;
+}
+.li-text{
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    color:#567C8D;
 }
 .head{
     font-size:4rem;
+    color: #567C8D;
 }
 
 .small-head{
-    font-size:2.5rem
+    font-size:2.5rem;
+    color: #567C8D;
 }
 
 

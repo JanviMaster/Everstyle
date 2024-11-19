@@ -16,8 +16,8 @@ const ShippingDetails = () => {
 
       <h2>Shipping Options and Fees</h2>
       <ul>
-        <li><strong>Standard Shipping:</strong> Delivery within <strong>5-7 business days</strong>. Free for orders over 150Rs; otherwise, a <strong>40Rs flat rate</strong>.</li>
-        <li><strong>Express Shipping:</strong> Delivery within <strong>2-3 business days</strong>. 49Rs flat rate for all orders.</li>
+        <li className='li-text'><strong>Standard Shipping:</strong> Delivery within <strong>5-7 business days</strong>. Free for orders over 150Rs; otherwise, a <strong>40Rs flat rate</strong>.</li>
+        <li className='li-text'><strong>Express Shipping:</strong> Delivery within <strong>2-3 business days</strong>. 49Rs flat rate for all orders.</li>
       </ul>
       <br/>
       <h2>Processing Time</h2>
@@ -31,12 +31,12 @@ const ShippingDetails = () => {
       <br/>
       <h2>Estimated Delivery Times</h2>
       <ul>
-        <li><strong>Domestic:</strong></li>
+        <li className='li-text'><strong>Domestic:</strong></li>
         <ul>
-          <li>Standard Shipping: 5-7 business days</li>
-          <li>Express Shipping: 2-3 business days</li>
+          <li className='li-text'>Standard Shipping: 5-7 business days</li>
+          <li className='li-text'>Express Shipping: 2-3 business days</li>
         </ul>
-        <li><strong>International:</strong> Varies by location; typically 10-15 business days</li>
+        <li className='li-text'><strong>International:</strong> Varies by location; typically 10-15 business days</li>
       </ul>
       <p><em>Note:</em> Delivery times are estimates and may vary due to weather conditions, carrier delays, or holidays.</p>
       <br/>

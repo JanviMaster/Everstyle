@@ -1,6 +1,10 @@
+/* teal- #008080 
+ sea-green light-#18BFB1
+ super-light-tiffany-blue -7AD1C4  */
+
 .footer {
-    background-color:  rgb(57, 51, 51);
-    color: #493129;
+    background-color:  #008080;
+    color: #7AD1C4 ;
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
@@ -50,9 +54,7 @@
   }
   
   .footer-section .social a {
-    /* color: #fff; */
-    color: 493129;
-
+    color:#7AD1C4  ;
     font-size: 20px;
     margin-right: 10px;
     text-decoration: none;
@@ -65,5 +67,8 @@
   .footer-section .about h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
+  }
+  .footer-text{
+    color:#7AD1C4  ;
   }
   

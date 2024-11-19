@@ -9,6 +9,7 @@ body {
 }
 /* Container for Explore cards */
 .explore-card-container {
+    /* background-color:#2F4156; */
     display: flex;
     justify-content: space-around;
     align-items: stretch; /* Ensures equal height for all cards */
@@ -20,6 +21,8 @@ body {
 
 /* Individual Explore card styling */
 .explore-card {
+  background-color:#2F4156;
+
     height: 700px; /* Set a uniform height for all cards */
     width: 16rem; /* Adjust width to make the card look smaller */
     display: flex;

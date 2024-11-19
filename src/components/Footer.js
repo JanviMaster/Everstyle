@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section about">
           <h3>Everstyle</h3>
-          <p>Everstyle is your go-to online store for high-quality products, designed to meet all your shopping needs.</p>
-          <p>&copy; {new Date().getFullYear()} Everstyle. All Rights Reserved.</p>
+          <p className='footer-text'>Everstyle is your go-to online store for high-quality products, designed to meet all your shopping needs.</p>
+          <p className='footer-text'>&copy; {new Date().getFullYear()} Everstyle. All Rights Reserved.</p>
         </div>
 
         <div className="footer-section links">
@@ -26,9 +26,9 @@ const Footer = () => {
 
         <div className="footer-section contact">
           <h4>Contact Us</h4>
-          <p>Email: support@everstyle.com</p>
-          <p>Phone: +123 456 7890</p>
-          <p>Address: 123 Market Street, Mumbai</p>
+          <p className='footer-text'>Email: support@everstyle.com</p>
+          <p className='footer-text'>Phone: +123 456 7890</p>
+          <p className='footer-text'>Address: 123 Market Street, Mumbai</p>
         </div>
 
         <div className="footer-section social">

@@ -34,9 +34,9 @@ const Aboutus = () => {
     <p>
     At Everstyle, you’ll find a wide range of products, including:</p>
     <ul>
-    <li> High-quality products designed to meet your everyday needs.</li>
-    <li> Stylish and modern dresses, perfect for any occasion.</li>
-    <li> Styles that combines innovation with functionality.</li>
+    <li className='li-text'> High-quality products designed to meet your everyday needs.</li>
+    <li className='li-text'> Stylish and modern dresses, perfect for any occasion.</li>
+    <li className='li-text'> Styles that combines innovation with functionality.</li>
     </ul>
     <p>
     Our team works tirelessly to handpick each product, ensuring that it’s up to our quality standards and that we’re offering the best possible price. We believe in creating value for you in every way.
