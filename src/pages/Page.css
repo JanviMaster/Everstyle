@@ -1,3 +1,7 @@
+/* teal- #008080 
+ sea-green light-#18BFB1
+ super-light-tiffany-blue -7AD1C4  */
+
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -6,7 +10,7 @@ body {
 }
 
 .everstyle-main{
-    background-color:#93d3c9;
+    background-color:#caf4ee;
     /* rgb(255,235,216) */
 }
 h1 {

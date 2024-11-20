@@ -60,7 +60,6 @@ const Dashboard = () => {
                
                 <Carousel images={carouselImages} />
                 <br />
-
                 <center><p className='small-head'>One stop destination for all your wadrobe essentials </p>
                 <br/>
                 <h3 className='head'> EVERMORE,<br/>

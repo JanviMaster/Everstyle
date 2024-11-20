@@ -1,4 +1,9 @@
 /* Explore.css */
+
+/* teal- #008080 
+ sea-green light-#18BFB1
+ super-light-tiffany-blue -7AD1C4  */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 body {
     font-family: 'Montserrat';
@@ -10,6 +15,7 @@ body {
 /* Container for Explore cards */
 .explore-card-container {
     /* background-color:#2F4156; */
+    padding :100px;
     display: flex;
     justify-content: space-around;
     align-items: stretch; /* Ensures equal height for all cards */
@@ -21,7 +27,7 @@ body {
 
 /* Individual Explore card styling */
 .explore-card {
-  background-color:#2F4156;
+  background-color:rgba(0, 128, 128, 0.5) ;
 
     height: 700px; /* Set a uniform height for all cards */
     width: 16rem; /* Adjust width to make the card look smaller */
@@ -108,7 +114,7 @@ body {
   
   /* Individual card styling */
   .explore-card {
-    height: 660px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
@@ -118,7 +124,8 @@ body {
   }
   
   .explore-card-img-top {
-    height: 370px;
+    height: 500px;
+    /* width: 100px; */
     object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

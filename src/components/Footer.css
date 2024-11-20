@@ -4,7 +4,7 @@
 
 .footer {
     background-color:  #008080;
-    color: #7AD1C4 ;
+    color:#caf4ee ;
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
@@ -69,6 +69,6 @@
     margin-bottom: 15px;
   }
   .footer-text{
-    color:#7AD1C4  ;
+    color:#caf4ee ;
   }
   

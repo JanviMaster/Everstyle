@@ -17,12 +17,20 @@ import Register from './components/Register';
 import Profile from './components/Profile';
 import { ToastContainer } from 'react-toastify';
 
+// import { useAuth } from './AuthProvider'; // Correct path
+// import { useAuth } from './components/AuthContext';
+// import Dashboard from './Dashboard';
+
 function App() {
+  // const { currentUser } = useAuth();
   return (
     <div>
       <Router>
         <AuthProvider>
           <Navbar />
+          {/* <div>
+      {currentUser ? <Dashboard /> : <Login />}
+    </div> */}
           <Routes>
             {/* Authentication Routes */}
              <Route path="/" element={<Dashboard />} />
