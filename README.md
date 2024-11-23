@@ -1,5 +1,5 @@
 <h1>Everstyle E-commerce Website</h1>
-  <p>Everstyle is a modern, React-based e-commerce platform designed to provide users with an intuitive shopping experience. The application features seamless navigation, dynamic components, and Firebase integration for user authentication and backend support. This project is under active development, with more functionalities planned for future updates.</p>
+  <p>Everstyle is a modern, React-based static e-commerce platform designed to provide users with an intuitive shopping experience. The application features seamless navigation.</p>
   <hr>
   <h2>Table of Contents</h2>
   <ul>
